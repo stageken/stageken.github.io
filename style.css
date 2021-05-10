@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+/* ------------------------------
+/* base
+/* ------------------------------ */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #222;
+  font-size: 1.2rem;
+  font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d03c56;
+  text-decoration: none;
+}
+
+/* ------------------------------
+/* header
+/* ------------------------------ */
+.header {
+  width: 100%;
+  padding: 10px 0 10px;
+}
+
+.logo {
+  width: 206px;
+  height: 144px;
+  margin: 0 auto;
+  background: url('./img/logo.png') no-repeat;
+  background-size: contain;
+}
+
+.logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.global-nav {
+  margin-top: 5px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.global-nav .nav-item {
+  display: inline-block;
+  margin: 0 20px 50px;
+  text-align: center;
+}
+
+.global-nav .nav-item a {
+  text-align: center;
+  margin: 0 10px;
+  padding: 10px 0;
+  color: #444;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  letter-spacing: 1px;
+}
+
+.global-nav .nav-item.active a,
+.global-nav .nav-item a:hover {
+  background: url('./img/current.png') top center no-repeat;
+}
+
+/* ------------------------------
+/* main
+/* ------------------------------ */
+.main {
+  display: block;
+  width: 1300px;
+  margin: 30px auto 40px;
+}
+
+/* ------------------------------
+/* footer
+/* ------------------------------ */
+.footer {
+  width: 100%;
+}
+
+/*仮のブロック*/
+/*.header, .main, .footer {
+  border: 1px solid #aaa;
+  background-color: #ccc;
+}
+
+.header, .footer {
+  height: 100px;
+}
+
+.main {
+  height: 500px;
+}
+/*仮のブロックここまで*/
