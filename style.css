@@ -27,7 +27,7 @@ a:link, a:visited, a:hover, a:active {
 /* header
 /* ------------------------------ */
 .header {
-  width: device-width;
+  width: 100%;
   padding: 10px 0 10px;
 }
 
@@ -96,7 +96,7 @@ a:link, a:visited, a:hover, a:active {
 /* footer
 /* ------------------------------ */
 .footer {
-  width: device-width;
+  width: 100%;
 }
 
 /*仮のブロック*/
