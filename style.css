@@ -80,6 +80,17 @@ a:link, a:visited, a:hover, a:active {
   margin: 30px auto 40px;
 }
 
+.snsitem {
+  width: 320px;
+}
+
+.snsitem h5 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 0 15px;
+  font-size: 1.4rem;
+}
+
 /* ------------------------------
 /* footer
 /* ------------------------------ */
