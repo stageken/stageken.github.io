@@ -8,6 +8,8 @@ html {
 }
 
 body {
+  padding: 0;
+  margin: 0;
   color: #222;
   font-size: 1.2rem;
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -15,6 +17,12 @@ body {
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -48,6 +56,10 @@ a:link, a:visited, a:hover, a:active {
   margin-top: 5px;
   text-align: center;
   list-style-type: none;
+}
+
+.global-nav ul {
+  padding-inline-start: 0;
 }
 
 .global-nav .nav-item {
@@ -87,17 +99,8 @@ a:link, a:visited, a:hover, a:active {
 .twitter {
   text-align: center;
   margin: 0 auto;
-  padding: 0 0 15px;
+  padding: 10px 0 15px;
   font-size: 1.4rem;
-}
-
-@media screen and (max-width: 896px) {
-  .main {
-    width: 90%;
-  }
-  .snsitem {
-    margin: 0 auto;
-  }
 }
 
 /* ------------------------------
@@ -105,19 +108,157 @@ a:link, a:visited, a:hover, a:active {
 /* ------------------------------ */
 .footer {
   width: 100%;
+  padding: 10x 0;
+  background-color: #f6f6f6;
 }
 
-/*仮のブロック*/
-/*.header, .main, .footer {
-  border: 1px solid #aaa;
-  background-color: #ccc;
+.copyright {
+  font-size: 0.9rem;
+  padding: 5px 0 5px 24px;
 }
 
-.header, .footer {
-  height: 100px;
-}
+/* ------------------------------
+/* responsive
+/* ------------------------------ */
+@media screen and (max-width: 486px) {
+  /* ------------------------------
+  /* header
+  /* ------------------------------ */
+  .header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    margin: 0 0 30px;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .logo {
+    width: 80px;
+    height: 56px;
+    margin: 3px 0 0 16px;
+  }
 
-.main {
-  height: 500px;
+  .global-nav {
+    position: fixed;
+    width: 100%;
+    height: 56px;
+  }
+  
+  .nav-content {
+    list-style-type: none;
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+  }
+  
+  .nav-content li, .nav-content.open li {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .nav-icon {
+    display: block;
+    float: right;
+    width: 28px;
+    height: 16px;
+    margin: 16px 16px 0 0;
+    z-index: 2;
+  }
+  
+  .nav-bar {
+    position: relative;
+    display: block;
+    width: 27px;
+    height: 3px;
+    background-color: #111;
+  }
+  
+  .nav-bar:nth-child(1) {
+    top: 0px;
+  }
+  
+  .nav-bar:nth-child(2) {
+    margin: 6px 0;
+  }
+  
+  .nav-bar:nth-child(3) {
+    top: 0px;
+  }
+  
+  .nav-icon.open .nav-bar:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .nav-icon.open .nav-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .nav-icon.open .nav-bar:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -9px  ;
+  }
+  
+  .global-nav .nav-content li ul{
+    list-style-type: none;
+    position: absolute;
+    top: 56px;
+    height: 0;
+    padding: 0;
+    transition: .5s;
+  }
+
+  .global-nav .nav-content.open li ul{
+    list-style-type: none;
+    position: absolute;
+    top: 56px;
+    height: 100vh;
+    padding: 0;
+    background-color: #f6f6f6;
+    transition: .5s;
+    opacity: 0.9;
+  }
+  
+  .global-nav .nav-content li ul li {
+    overflow: hidden;
+    height: 0;
+    text-align: left;
+    transition: .5s;
+  }
+  
+  .global-nav .nav-content.open li ul li {
+    overflow: visible;
+    height: 35px;
+    text-align: left;
+    transition: .5s;
+  }
+
+  .global-nav .nav-content li ul .nav-item {
+    margin: 0;
+    padding: 5px;
+  }
+
+
+  /* ------------------------------
+  /* main
+  /* ------------------------------ */  
+  .main {
+    width: 90%;
+    margin: 15px auto 20px;
+    padding-top: 56px;
+  }
+
+  .snsitem {
+    margin: 0 auto;
+  }
+
+  .tmp {
+    display: block;
+    width: 100px;
+    height: 400px;
+    background-color: #444;
+  }
 }
-/*仮のブロックここまで*/
