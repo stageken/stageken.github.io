@@ -124,7 +124,7 @@ a:link, a:visited, a:hover, a:active {
 /* ------------------------------
 /* responsive
 /* ------------------------------ */
-@media screen and (max-width: 486px) {
+@media screen and (max-width: 960px) {
   /* ------------------------------
   /* header
   /* ------------------------------ */
