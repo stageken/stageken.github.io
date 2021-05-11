@@ -1,16 +1,10 @@
 @charset "UTF-8";
-@media screen and (max-width: 896px) {
-  .main {
-    width: 90%;
-  }
-}
 
 /* ------------------------------
 /* base
 /* ------------------------------ */
 html {
   font-size: 62.5%;
-  touch-action: manipulation;
 }
 
 body {
@@ -86,6 +80,11 @@ a:link, a:visited, a:hover, a:active {
   margin: 30px auto 40px;
 }
 
+@media screen and (max-width: 896px) {
+  .main {
+    width: 90%;
+  }
+}
 .snsitem {
   width: 320px;
 }
