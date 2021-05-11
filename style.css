@@ -1,5 +1,9 @@
 @charset "UTF-8";
-@media screen and (max-width: 896px) {}
+@media screen and (max-width: 896px) {
+  .main {
+    width: 90%;
+  }
+}
 
 /* ------------------------------
 /* base
