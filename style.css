@@ -92,6 +92,10 @@ a:link, a:visited, a:hover, a:active {
   margin: 30px auto 40px;
 }
 
+.remark {
+  text-align: center;
+}
+
 .snsitem {
   width: 320px;
 }
