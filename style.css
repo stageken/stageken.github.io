@@ -146,20 +146,20 @@ a:link, a:visited, a:hover, a:active {
     height: 56px;
   }
   
-  .nav-content {
+  .global-nav .nav-content {
     list-style-type: none;
     position: relative;
     transition: .5s;
     z-index: 1;
   }
   
-  .nav-content li, .nav-content.open li {
+  .global-nav .nav-content li, .global-nav .nav-content.open li {
     position: relative;
     width: 100%;
     text-align: left;
   }
   
-  .nav-icon {
+  .global-nav .nav-icon {
     display: block;
     float: right;
     width: 28px;
@@ -168,7 +168,7 @@ a:link, a:visited, a:hover, a:active {
     z-index: 2;
   }
   
-  .nav-bar {
+  .global-nav .nav-icon .nav-bar {
     position: relative;
     display: block;
     width: 27px;
@@ -208,15 +208,17 @@ a:link, a:visited, a:hover, a:active {
     top: 56px;
     height: 0;
     padding: 0;
+    margin: 0;
     transition: .5s;
   }
-
+  
   .global-nav .nav-content.open li ul{
     list-style-type: none;
     position: absolute;
     top: 56px;
     height: 100vh;
     padding: 0;
+    margin: 0;
     background-color: #f6f6f6;
     transition: .5s;
     opacity: 0.9;
