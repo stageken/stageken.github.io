@@ -80,11 +80,6 @@ a:link, a:visited, a:hover, a:active {
   margin: 30px auto 40px;
 }
 
-@media screen and (max-width: 896px) {
-  .main {
-    width: 90%;
-  }
-}
 .snsitem {
   width: 320px;
 }
@@ -94,6 +89,15 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 auto;
   padding: 0 0 15px;
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 896px) {
+  .main {
+    width: 90%;
+  }
+  .snsitem {
+    margin: 0 auto;
+  }
 }
 
 /* ------------------------------
