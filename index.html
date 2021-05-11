@@ -5,21 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <title>農工大ステージ研究会</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="./script.js"></script>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="header">
-    <h1 class="logo">
-      <a href="/"></a>
-    </h1>
+    <h1 class="logo"><a href="/"></a></h1>
     <nav class="global-nav">
-      <ul>
-        <li class="nav-item"><a href="/">TOP</a></li>
-        <li class="nav-item"><a href="#">NEWS</a></li>
-        <li class="nav-item"><a href="#">EVENT SCHEDULE</a></li>
-        <li class="nav-item"><a href="#">EXHIBITION</a></li>
-        <li class="nav-item"><a href="#">CONTACT</a></li>
-      </ul>
+      <div class="nav-content">
+        <li>
+          <div class="nav-icon">
+            <div class="nav-bar"></div>
+            <div class="nav-bar"></div>
+            <div class="nav-bar"></div>
+          </div>
+          <ul>
+            <li class="nav-item"><a href="/">TOP</a></li>
+            <li class="nav-item"><a href="#">NEWS</a></li>
+            <li class="nav-item"><a href="#">EVENT SCHEDULE</a></li>
+            <li class="nav-item"><a href="#">EXHIBITION</a></li>
+            <li class="nav-item"><a href="#">CONTACT</a></li>
+          </ul>
+        </li>
+      </div>
     </nav>
   </header>
   <main class="main">
@@ -29,7 +38,11 @@
       data-chrome=”noheadernofooter” href="https://twitter.com/tuatsyoumei?ref_src=twsrc%5Etfw">Tweets by tuatsyoumei</a>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+
+    <div class="tmp"></div>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <p class="copyright">Copyright © 2021 STAGEKEN.</p>
+  </footer>
 </body>
 </html>
