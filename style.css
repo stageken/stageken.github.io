@@ -48,6 +48,9 @@ a:link, a:visited, a:hover, a:active {
   margin: 0 auto;
   background: url('./img/logo.png') no-repeat;
   background-size: contain;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
 
 .logo a {
