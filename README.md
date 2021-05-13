@@ -3,4 +3,4 @@
 https://plainoaks.github.io/STAGEKEN-HOMEPAGE/
 
 公開用はこっち
-https://plainoaks.github.io/
+https://stageken.github.io/
