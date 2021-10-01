@@ -46,7 +46,7 @@ a:link, a:visited, a:hover, a:active {
   width: 206px;
   height: 144px;
   margin: 0 auto;
-  background: url('./img/logo.png') no-repeat;
+  background: url('/img/logo.png') no-repeat;
   background-size: contain;
   overflow: hidden;
   text-indent: 100%;
@@ -87,7 +87,7 @@ a:link, a:visited, a:hover, a:active {
 
 .global-nav .nav-item.active a,
 .global-nav .nav-item a:hover {
-  background: url('./img/current.png') top center no-repeat;
+  background: url('/img/current.png') top center no-repeat;
 }
 
 /* ------------------------------
@@ -97,6 +97,7 @@ a:link, a:visited, a:hover, a:active {
   display: block;
   width: 100%;
   margin: 30px 0 40px;
+  padding: 0 30px 5px;
 }
 
 .hot-topic {
@@ -277,7 +278,7 @@ a:link, a:visited, a:hover, a:active {
 
   .global-nav .nav-content li ul .nav-item.active a,
   .global-nav .nav-content li ul .nav-item a:hover {
-    background: url('./img/current.png') left center no-repeat;
+    background: url('/img/current.png') left center no-repeat;
   }
 
 
