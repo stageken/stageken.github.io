@@ -6,6 +6,13 @@
   margin: 10px auto 0;
 }
 
+.contact-info {
+  display: block;
+  text-align: center;
+  font-size: larger;
+  margin: 10px auto;
+}
+
 .contact-form {
   margin: 40px;
 }

@@ -117,16 +117,21 @@ a:link, a:visited, a:hover, a:active {
   opacity: 0.85;
 }
 
-.snsitem {
+.information {
+  display: flex;
   width: 320px;
-  margin: 10px;
+  margin: 20px auto 10px;
 }
 
-.twitter {
+.topic-title {
   text-align: center;
   margin: 0 auto;
   padding: 10px 0 15px;
   font-size: 1.4rem;
+}
+
+.twitter {
+  margin: 0 ;
 }
 
 /* ------------------------------
