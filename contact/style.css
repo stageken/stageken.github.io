@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+.section {
+  font-family: fantasy;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.contact-form {
+  margin: 40px;
+}
+
+.form-item {
+  display: block;
+  margin: 0 0 5px;
+}
+
+.required-information {
+  display: block;
+}
+
+.required-information::after {
+  white-space: pre-wrap;
+  content: " *";
+}
+
+#yourname {
+  padding-left: 1em;
+  padding-right: 1em;
+  flex: 1;
+  width: 100%;
+  max-width: 300px;
+  font-size: 18px;
+}
+
+#email {
+  padding-left: 1em;
+  padding-right: 1em;
+  flex: 1;
+  width: 100%;
+  max-width: 300px;
+  font-size: 18px;
+}
+
+#message {
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 820px;
+  font-size: 18px;
+}
+
+#yourname:required,
+#email:required,
+#email:invalid,
+#message:required {
+  color: #630015;
+	border-color: #c20c33;
+	background-color: #ffd9e1;
+}
