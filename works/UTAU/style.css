@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.section {
+  font-family: fantasy;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.text {
+  text-align: center;
+  font-size: large;
+}

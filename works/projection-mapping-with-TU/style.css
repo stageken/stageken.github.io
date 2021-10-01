@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.section {
+  font-family: fantasy;
+  text-align: center;
+  margin: 10px auto 0;
+}
+
+.article {
+  margin: 30px auto;
+}
+
+.project-img {
+  display: block;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.description {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
